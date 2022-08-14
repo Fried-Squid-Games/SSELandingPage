@@ -1,0 +1,74 @@
+@font-face {
+    font-family: QuikHand;
+    src: url(font/Quikhand.ttf);
+}
+
+body{
+    background-image: url('img/HighresScreenshot00003.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#title{
+    margin: 20px auto;
+    padding: 0;
+    width: 30%;
+    display: block;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(93, 150, 255);
+}
+
+.desc{
+    color: white;
+    display: block;
+    font-family: QuikHand;
+    margin: 50px;
+}
+
+.heading{
+    display:block;
+}
+
+.desc > a{
+    text-decoration: underline;
+    color: rgb(241, 255, 34);
+}
+
+.showcase{
+    padding: 10px 20px;
+    width: 624px;
+    height: 512px;
+}
+
+footer{
+    background-color: rgb(93, 150, 255);
+    padding: 20px 0;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footerIcon{
+    width: 24px;
+    height: 24px;
+}
+
+.link{
+    text-decoration: none;
+    color:black;
+    padding: 25px;
+}

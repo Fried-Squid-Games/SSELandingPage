@@ -1,8 +1,14 @@
+@font-face {
+    font-family: QuikHand;
+    src: url(font/Quikhand.ttf);
+}
+
 body{
-    background-image: url('img/background.png');
+    background-image: url('img/HighresScreenshot00003.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
 }
 
 #title{
@@ -46,7 +52,7 @@ body{
     background-color: rgb(93, 150, 255);
     justify-content: center;
     display:flex;
-    width: 10%;
+    width: 12%;
     margin: 20px auto
 }
 
@@ -62,6 +68,44 @@ body{
     margin: auto;
 }
 
-h2{
+.desc{
     color: white;
+    display: block;
+    font-family: QuikHand;
+}
+
+#discord{
+    display: flex;
+    justify-content: center;
+    font-family: QuikHand;
+    background-color: rgb(93, 150, 255);
+    color: white;
+    margin: 50px auto;
+    width: 50%;
+}
+
+footer{
+    background-color: rgb(93, 150, 255);
+    padding: 20px 0;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footerIcon{
+    width: 24px;
+    height: 24px;
+}
+
+.link{
+    text-decoration: none;
+    color:black;
+    padding: 25px;
 }
