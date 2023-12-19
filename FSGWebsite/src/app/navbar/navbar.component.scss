@@ -35,7 +35,7 @@
 a.button {
   height: 100%;
   width: 100%;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   display: flex;
   justify-content: center;
   margin-right: 100px;
@@ -48,6 +48,5 @@ a.button {
 
 a.button:hover {
   background-color: gray; /* Change background color on hover */
-  border: none; /* Remove the button border */
-  outline: none; /* Remove the outline when focused */
+  transform: scale(1.05); /* Enlarge the button on hover by 5% */
 }
