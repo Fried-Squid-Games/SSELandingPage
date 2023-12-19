@@ -9,6 +9,9 @@ import { GamesComponent } from './games';
 import { ResourcesComponent } from './resources';
 import { NewsComponent } from './news';
 import { appRoutingModule } from './app.routing';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { appRoutingModule } from './app.routing';
     GamesComponent,
     ResourcesComponent,
     NewsComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     appRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

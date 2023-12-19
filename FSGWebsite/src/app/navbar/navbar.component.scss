@@ -1,0 +1,53 @@
+.logo-wrapper {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 400px; /* Set the height of the wrapper (adjust as needed) */
+  /* Add other styles to position the wrapper if required */
+  background-color: black;
+}
+
+.logo-container {
+  width: 500px; /* Set the width of the container */
+  height: 400px; /* Set the height of the container */
+  overflow: hidden; /* Hide overflow content */
+  display: inline-block; /* Displays the container as inline-block */
+  position: relative; /* Position the container relative to its parent */
+  transform: translate(0%, 0%); /* Move the container */
+}
+
+.logo {
+  width: 100%; /* Fill the entire width of the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures the image fills its parent container */
+  object-fit: cover; /* Maintains aspect ratio and covers the entire container */
+}
+.nav-bar {
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center; /* Center aligns the links horizontally */
+}
+.button-container {
+  height: 100px;
+}
+
+a.button {
+  height: 100%;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+  border: none; /* Remove the button border */
+  outline: none; /* Remove the outline when focused */
+  &:not(:first-child) {
+    margin-left: 100px; /* Applies margin-left except for the first child */
+  }
+}
+
+a.button:hover {
+  background-color: gray; /* Change background color on hover */
+  border: none; /* Remove the button border */
+  outline: none; /* Remove the outline when focused */
+}
