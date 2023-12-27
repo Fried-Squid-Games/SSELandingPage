@@ -1,3 +1,23 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Ensure the footer sticks to the bottom */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+.content {
+  flex: 1;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -16,26 +36,6 @@
   margin-right: 100px;
   justify-content: right;
 }
-.nav-bar {
-  height: 100%;
-  background-color: black;
-  display: flex;
-  a.button {
-    height: 100%;
-    width: 100%;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    display: flex;
-    justify-content: center;
-    margin-right: 100px;
-    border: none;
-    outline: none;
-    text-align: center;
-    &:not(:first-child) {
-      margin-left: 100px;
-    }
-  }
-}
-
 a.button:hover {
   transform: scale(1.1);
   justify-content: center;
@@ -47,14 +47,13 @@ a.button:hover {
   opacity: 0;
 }
 .social-wrapper {
-  justify-content: right;
-  margin-left: 25%;
+  margin-top: 1%;
   .social-container {
     animation: fadeIn 0.5s ease-in-out;
     transition: transform 0.3s ease;
     justify-content: center;
     display: inline-block;
-    width: 25px;
+    width: 15px;
     margin-left: 20px;
     margin-right: 20px;
   }
