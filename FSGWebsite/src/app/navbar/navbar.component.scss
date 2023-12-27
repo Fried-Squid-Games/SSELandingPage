@@ -46,3 +46,19 @@ a.button:hover {
   animation-fill-mode: both;
   opacity: 0;
 }
+.social-wrapper {
+  justify-content: right;
+  margin-left: 25%;
+  .social-container {
+    animation: fadeIn 0.5s ease-in-out;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    display: inline-block;
+    width: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .social-container:hover {
+    transform: scale(1.1);
+  }
+}
