@@ -13,6 +13,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
+import { BannerComponent } from './banner/banner.component';
+import { ContentCardComponent } from './content-card/content-card.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     NewsComponent,
     NavbarComponent,
     FooterComponent,
+    BannerComponent,
+    ContentCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +36,7 @@ import { FooterComponent } from './footer/footer.component';
     appRoutingModule,
     MatToolbarModule,
     MatButtonModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

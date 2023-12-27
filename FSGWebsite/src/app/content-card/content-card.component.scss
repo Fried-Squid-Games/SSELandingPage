@@ -1,0 +1,11 @@
+mat-card {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  width: 100vh; /* Set width to 400px */
+  height: 400px; /* Set height to 400px */
+  margin: 20px;
+}
+
+mat-card-actions button.mat-button {
+  color: white !important; /* Set text color to white for mat-button */
+}

@@ -1,0 +1,23 @@
+/* banner.component.scss */
+
+.banner {
+  width: 100vw; /* Use viewport width to cover the entire horizontal space */
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  justify-content: center;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Clip the bottom part */
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    rgb(255, 255, 255) 100%
+  );
+  mask-image: linear-gradient(to top, transparent 0%, rgb(255, 255, 255) 80%);
+  z-index: 0;
+}
