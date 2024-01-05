@@ -1,14 +1,23 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title style="font-size: x-large">{{ cardTitle }}</mat-card-title>
-    <mat-card-subtitle style="color: white">{{
-      cardSubtitle
-    }}</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <p>{{ cardContent }}</p>
-  </mat-card-content>
-  <mat-card-actions>
-    <!-- Your actions or buttons -->
-  </mat-card-actions>
+<mat-card class="card">
+  <div class="card-content-container">
+    <div class="text-content">
+      <mat-card-header>
+        <mat-card-title
+          style="color: #fcb045; font-size: 1.8vw; margin-bottom: 20px"
+          ><b>{{ cardTitle }}</b></mat-card-title
+        >
+        <mat-card-subtitle style="color: white">{{
+          cardSubtitle
+        }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content [innerHTML]="cardContent"> </mat-card-content>
+      <mat-card-actions>
+        <!-- Your actions or buttons -->
+      </mat-card-actions>
+    </div>
+    <div class="image-container">
+      <!-- Place your image container or image tag here -->
+      <img [src]="image" alt="Image" />
+    </div>
+  </div>
 </mat-card>

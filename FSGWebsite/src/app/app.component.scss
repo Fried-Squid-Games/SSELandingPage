@@ -50,7 +50,14 @@ header {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Set minimum height to cover the viewport */
-  overflow: auto; /* Enable scrolling when content overflows */
+  overflow: none; /* Enable scrolling when content overflows */
+  min-width: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #cfe7ff,
+    #92c9ff 50%,
+    #316a90
+  ); /* Gradient simulating ocean color transition */
 }
 .footer {
   margin-top: auto; /* Push the footer to the bottom */

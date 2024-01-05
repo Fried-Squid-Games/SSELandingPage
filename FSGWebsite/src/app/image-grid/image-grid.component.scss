@@ -1,0 +1,45 @@
+.grid-container {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Horizontally centers the items */
+  gap: 0px;
+  padding: 1%;
+}
+.grid-item {
+  width: 250px; /* Set the width of each item */
+  height: 250px; /* Set the height of each item */
+  overflow: hidden;
+}
+.grid-item img {
+  width: 99%;
+  height: 99%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+.lightbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  overflow: auto;
+}
+
+.lightbox img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  max-width: 90vw;
+  max-height: 90vh;
+}

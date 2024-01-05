@@ -1,11 +1,47 @@
 mat-card {
-  background-color: black; /* Set background color to black */
-  color: white; /* Set text color to white */
-  width: 100vh; /* Set width to 400px */
-  height: 400px; /* Set height to 400px */
+  background-color: black;
+  color: white;
+  width: 100%; /* Set width to 100% for responsiveness */
+  height: 100%; /* Set height to 100% for responsiveness */
+  max-width: 1200px; /* Set maximum width */
+  max-height: 800px; /* Set maximum height */
   margin: 20px;
+  display: flex; /* Ensures card fills the available space */
+  flex-direction: column; /* Ensures children stack vertically */
+  overflow: hidden; /* Prevents overflow */
 }
 
 mat-card-actions button.mat-button {
-  color: white !important; /* Set text color to white for mat-button */
+  color: white !important;
+}
+
+.card-content-container {
+  flex: 1; /* Occupy remaining space */
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; /* Prevents overflow */
+}
+
+.text-content {
+  flex: 1;
+  padding: 10px;
+  overflow: auto; /* Enable scrolling if content overflows */
+  word-wrap: break-word; /* Allow breaking long words */
+  max-height: 100%; /* Limit text content height */
+  font-size: 1.5vw; /* Adjust the font size based on viewport width */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+  padding: 20px;
+  overflow: hidden; /* Prevents overflow */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures the image fits within the container */
+  max-height: 100%; /* Ensures the image fits within the container */
+  object-fit: contain; /* Fits the entire image within the container */
 }

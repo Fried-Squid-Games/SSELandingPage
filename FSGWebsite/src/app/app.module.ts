@@ -16,6 +16,9 @@ import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
 import { ContentCardComponent } from './content-card/content-card.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu'; // Import MatMenuModule
+import { MatIconModule } from '@angular/material/icon';
+import { ImageGridComponent } from './image-grid/image-grid.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,7 @@ import { MatCardModule } from '@angular/material/card';
     FooterComponent,
     BannerComponent,
     ContentCardComponent,
+    ImageGridComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,8 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
+    MatMenuModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

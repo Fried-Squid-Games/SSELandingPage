@@ -41,7 +41,18 @@ a.button:hover {
   justify-content: center;
   color: #fcb045 !important;
 }
+.button-container button:hover {
+  transform: scale(1.1);
+  justify-content: center;
+  color: #fcb045 !important;
+}
+
 .button-container a {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+.button-container button {
   animation: fadeIn 0.5s ease-in-out;
   animation-fill-mode: both;
   opacity: 0;

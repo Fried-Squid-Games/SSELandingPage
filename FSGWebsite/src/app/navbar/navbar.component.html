@@ -12,14 +12,26 @@
         >Home</a
       >
     </div>
-    <div class="button-container">
-      <a
+    <div class="button-container" [matMenuTriggerFor]="gamesMenu">
+      <button
         mat-button
-        routerLink="/games"
-        class="button"
-        style="color: white; font-size: x-large; border-radius: 0"
-        >Games</a
+        (click)="rotateDropdownIcon()"
+        style="
+          color: white;
+          font-size: x-large;
+          border-radius: 0;
+          margin-right: 50px;
+          margin-left: 50px;
+        "
       >
+        Games
+      </button>
+      <mat-menu #gamesMenu="matMenu" (closed)="resetDropdownIcon()">
+        <button mat-menu-item [routerLink]="'/games'">
+          Shopping Spree: Extreme!!!
+        </button>
+        <!-- Add more game links as needed -->
+      </mat-menu>
     </div>
     <div class="button-container">
       <a

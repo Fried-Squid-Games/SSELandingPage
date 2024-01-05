@@ -1,19 +1,19 @@
-/* home.component.scss */
-
 .home-wrapper {
-  display: grid;
-  grid-template-rows: auto 1fr; /* Header takes auto height, content takes remaining space */
-  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   overflow: hidden;
-  width: 100%; /* Ensure the wrapper spans the entire width */
+  width: 100%;
   z-index: 2;
 }
 
-header {
-  display: inline-block;
-  padding: 20px;
-  text-align: center;
-  background-color: #333;
-  color: white;
-  width: 100%; /* Make the header span the entire width */
+.content-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align cards to the start (left side) */
+}
+
+.content-card {
+  width: 100%; /* Each card takes the full width */
+  box-sizing: border-box;
 }

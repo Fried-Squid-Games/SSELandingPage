@@ -2,14 +2,23 @@
   <div>
     <app-banner imageUrl="assets\images\banner.png"></app-banner>
   </div>
-  <header>
-    <h1 class="h-title">Fried Squid Games LLC</h1>
-  </header>
-  <div class="content-card-wrapper">
-    <app-content-card
-      [cardTitle]="'About Us'"
-      [cardSubtitle]="''"
-      [cardContent]="aboutUsContent"
-    ></app-content-card>
+  <div class="content-card-container">
+    <div class="content-card">
+      <app-content-card
+        [cardTitle]="'About Fried Squid Games LLC'"
+        [cardSubtitle]="''"
+        [cardContent]="aboutUsContent"
+        [image]="'assets/images/devs.jpg'"
+      ></app-content-card>
+    </div>
+    <div class="content-card" style="margin-left: 35%">
+      <app-content-card
+        class="right-card"
+        [cardTitle]="'Our Type of Game'"
+        [cardSubtitle]="''"
+        [cardContent]="ourTypeOfGame"
+        [image]="'assets/images/CoverImage.png'"
+      ></app-content-card>
+    </div>
   </div>
 </div>
