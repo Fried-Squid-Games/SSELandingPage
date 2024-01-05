@@ -20,4 +20,8 @@ export class NavbarComponent {
       this.dropdownIcon.classList.remove('rotated');
     }
   }
+
+  newTab(url: string){
+    window.open(url, "_blank");
+  }
 }

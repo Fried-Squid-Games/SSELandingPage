@@ -31,21 +31,33 @@
         (closed)="resetDropdownIcon()"
         class="custom-menu"
       >
-        <button mat-menu-item [routerLink]="'/games'" class="custom-menu-item">
+        <button mat-menu-item [routerLink]="'/games/shopping-spree-extreme'" class="custom-menu-item">
           Shopping Spree: Extreme!!!
         </button>
         <!-- Add more game links as needed -->
       </mat-menu>
     </div>
-    <!--<div class="button-container">
+    <div class="button-container" [matMenuTriggerFor]="resourcesMenu">
       <a
         mat-button
-        routerLink="/resources"
         class="button"
         style="color: white; font-size: x-large; border-radius: 0"
         >Resources</a
       >
-    </div>-->
+      <mat-menu
+        #resourcesMenu="matMenu"
+        (closed)="resetDropdownIcon()"
+        class="custom-menu"
+      >
+        <button mat-menu-item class="custom-menu-item" (click)="newTab('https://forms.gle/L49KQtGrfXCFdW5W7')">
+          Feedback Form
+        </button>
+        <button mat-menu-item class="custom-menu-item" (click)="newTab('https://forms.gle/eHMpAD7gRR3A3zbe9')">
+          Bug Report
+        </button>
+        <!-- Add more resource links as needed -->
+      </mat-menu>
+    </div>
     <div class="button-container">
       <a
         mat-button

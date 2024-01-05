@@ -7,7 +7,7 @@ import { NewsComponent } from './news';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'games', component: GamesComponent },
+  { path: 'games/shopping-spree-extreme', component: GamesComponent },
   { path: 'resources', component: ResourcesComponent },
   { path: 'news', component: NewsComponent },
 
