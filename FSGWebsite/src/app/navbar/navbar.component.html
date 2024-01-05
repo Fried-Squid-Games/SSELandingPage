@@ -1,5 +1,5 @@
 <div class="nav-bar-wrapper">
-  <mat-toolbar class="nav-bar">
+  <mat-toolbar style="padding-left: 0% !important" class="nav-bar">
     <a class="logo-container" routerLink="/">
       <img src="assets/images/FSGLogoCircle.png" alt="logo" class="logo" />
     </a>
@@ -26,14 +26,18 @@
       >
         Games
       </button>
-      <mat-menu #gamesMenu="matMenu" (closed)="resetDropdownIcon()">
-        <button mat-menu-item [routerLink]="'/games'">
+      <mat-menu
+        #gamesMenu="matMenu"
+        (closed)="resetDropdownIcon()"
+        class="custom-menu"
+      >
+        <button mat-menu-item [routerLink]="'/games'" class="custom-menu-item">
           Shopping Spree: Extreme!!!
         </button>
         <!-- Add more game links as needed -->
       </mat-menu>
     </div>
-    <div class="button-container">
+    <!--<div class="button-container">
       <a
         mat-button
         routerLink="/resources"
@@ -41,7 +45,7 @@
         style="color: white; font-size: x-large; border-radius: 0"
         >Resources</a
       >
-    </div>
+    </div>-->
     <div class="button-container">
       <a
         mat-button

@@ -5,6 +5,8 @@
   justify-content: center; /* Horizontally centers the items */
   gap: 0px;
   padding: 1%;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.75); /* Add shadow effect */
 }
 .grid-item {
   width: 250px; /* Set the width of each item */

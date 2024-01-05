@@ -20,6 +20,7 @@
   height: 100%;
   background-color: black;
   display: flex;
+
   a.button {
     height: 100%;
     width: 100%;
@@ -72,4 +73,17 @@ a.button:hover {
   .social-container:hover {
     transform: scale(1.1);
   }
+}
+::ng-deep .mat-mdc-menu-panel.custom-menu {
+  background-color: #333333; /* Set the menu background color to gray */
+  color: white; /* Set the default text color to white */
+  border-radius: 0; /* Remove rounded edges */
+}
+
+::ng-deep .mat-mdc-menu-item.custom-menu-item {
+  color: white !important; /* Set the text color for menu items */
+}
+
+::ng-deep .mat-mdc-menu-item.custom-menu-item:hover {
+  color: #fcb045 !important;
 }

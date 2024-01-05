@@ -42,7 +42,7 @@ header {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 /* Adjust the main content to fill the entire page */
@@ -66,4 +66,12 @@ header {
   padding: 20px 0;
   text-align: center;
   width: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }

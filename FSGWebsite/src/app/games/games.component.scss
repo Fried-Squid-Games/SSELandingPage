@@ -6,3 +6,54 @@
   width: 100%;
   z-index: 2;
 }
+.sse-banner {
+  background-image: linear-gradient(to right, darkblue, orange);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.sse-banner img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+.trailer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the embedded YouTube player */
+app-youtube-player {
+  width: 100%; /* Use the full width of the container */
+  height: 120%; /* Use the full height of the container */
+  max-width: fit-content; /* Set a maximum width for the player if needed */
+  max-height: fit-content; /* Set a maximum height for the player if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.75); /* Add shadow effect */
+}
+.steam-link {
+  background-color: black;
+  color: white;
+  text-align: center; /* Center the text horizontally */
+  padding: 20px 0; /* Add top and bottom padding */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.75); /* Add shadow effect */
+  margin-bottom: 20px;
+
+  h2 {
+    a {
+      color: #fcb045;
+      text-decoration: underline; /* Underline the link */
+    }
+  }
+}
+.sse-content {
+  opacity: 1;
+  transition: opacity 0.5s ease !important; /* Adjust the transition duration and timing function */
+}
+
+.fade-in {
+  opacity: 1;
+}

@@ -9,6 +9,7 @@ mat-card {
   display: flex; /* Ensures card fills the available space */
   flex-direction: column; /* Ensures children stack vertically */
   overflow: hidden; /* Prevents overflow */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.75); /* Add shadow effect */
 }
 
 mat-card-actions button.mat-button {

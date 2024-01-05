@@ -19,6 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu'; // Import MatMenuModule
 import { MatIconModule } from '@angular/material/icon';
 import { ImageGridComponent } from './image-grid/image-grid.component';
+import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ImageGridComponent } from './image-grid/image-grid.component';
     BannerComponent,
     ContentCardComponent,
     ImageGridComponent,
+    YoutubePlayerComponent,
   ],
   imports: [
     BrowserModule,
