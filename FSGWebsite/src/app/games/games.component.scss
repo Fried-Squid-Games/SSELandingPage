@@ -43,9 +43,13 @@ app-youtube-player {
   margin-bottom: 20px;
 
   h2 {
+    display: inline;
     a {
       color: #fcb045;
       text-decoration: underline; /* Underline the link */
+      img{
+        vertical-align: middle;
+      }
     }
   }
 }
@@ -56,4 +60,8 @@ app-youtube-player {
 
 .fade-in {
   opacity: 1;
+}
+
+#divider{
+  padding-right: 20px;
 }
