@@ -1,7 +1,7 @@
 <div class="nav-bar-wrapper">
   <mat-toolbar style="padding-left: 0% !important" class="nav-bar">
     <a class="logo-container" routerLink="/">
-      <img src="assets/images/FSGLogoCircle.png" alt="logo" class="logo" />
+      <img src="assets/images/FSGLogoCircle.png" alt="logo" class="FSGlogo" />
     </a>
     <div class="button-container">
       <a
@@ -16,13 +16,7 @@
       <button
         mat-button
         (click)="rotateDropdownIcon()"
-        style="
-          color: white;
-          font-size: x-large;
-          border-radius: 0;
-          margin-right: 50px;
-          margin-left: 50px;
-        "
+        style="color: white; font-size: x-large; border-radius: 0"
       >
         Games
       </button>
@@ -31,7 +25,11 @@
         (closed)="resetDropdownIcon()"
         class="custom-menu"
       >
-        <button mat-menu-item [routerLink]="'/games/shopping-spree-extreme'" class="custom-menu-item">
+        <button
+          mat-menu-item
+          [routerLink]="'/games/shopping-spree-extreme'"
+          class="custom-menu-item"
+        >
           Shopping Spree: Extreme!!!
         </button>
         <!-- Add more game links as needed -->
@@ -49,10 +47,18 @@
         (closed)="resetDropdownIcon()"
         class="custom-menu"
       >
-        <button mat-menu-item class="custom-menu-item" (click)="newTab('https://forms.gle/L49KQtGrfXCFdW5W7')">
+        <button
+          mat-menu-item
+          class="custom-menu-item"
+          (click)="newTab('https://forms.gle/L49KQtGrfXCFdW5W7')"
+        >
           Feedback Form
         </button>
-        <button mat-menu-item class="custom-menu-item" (click)="newTab('https://forms.gle/eHMpAD7gRR3A3zbe9')">
+        <button
+          mat-menu-item
+          class="custom-menu-item"
+          (click)="newTab('https://forms.gle/eHMpAD7gRR3A3zbe9')"
+        >
           Bug Report
         </button>
         <!-- Add more resource links as needed -->

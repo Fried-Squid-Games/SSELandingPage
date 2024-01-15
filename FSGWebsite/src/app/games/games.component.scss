@@ -47,21 +47,29 @@ app-youtube-player {
     a {
       color: #fcb045;
       text-decoration: underline; /* Underline the link */
-      img{
+      img {
         vertical-align: middle;
       }
     }
   }
 }
 .sse-content {
-  opacity: 1;
-  transition: opacity 0.5s ease !important; /* Adjust the transition duration and timing function */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+
+  &:nth-child(even) {
+    margin-left: 200px; /* Larger margin for every other sse-content item */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .fade-in {
   opacity: 1;
 }
 
-#divider{
+#divider {
   padding-right: 20px;
 }

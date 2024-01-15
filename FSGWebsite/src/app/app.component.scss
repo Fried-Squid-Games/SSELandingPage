@@ -49,9 +49,10 @@ header {
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Set minimum height to cover the viewport */
+  min-height: 100%; /* Set minimum height to cover the viewport */
+
   overflow: none; /* Enable scrolling when content overflows */
-  min-width: 100vh;
+  min-width: 100%;
   background: linear-gradient(
     to bottom,
     #cfe7ff,
@@ -69,9 +70,11 @@ header {
 }
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }

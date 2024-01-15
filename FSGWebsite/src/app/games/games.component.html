@@ -7,18 +7,23 @@
       <h2>
         <a
           href="https://store.steampowered.com/app/2124300/Shopping_Spree_Extreme/"
-          ><img src="assets/images/SteamWhite.png" height="50px"></a
-        >
+          ><img src="assets/images/SteamWhite.png" height="50px"
+        /></a>
       </h2>
-      <h2 id="divider"> | </h2>
+      <h2 id="divider">|</h2>
       <h2>
-        <a href="assets/files/PressKit.zip" target="_self" download="assets/files/PressKit.zip">Download Our Press Kit (48 MB)</a>
+        <a
+          href="assets/files/PressKit.zip"
+          target="_self"
+          download="assets/files/PressKit.zip"
+          >Download Our Press Kit (48 MB)</a
+        >
       </h2>
     </div>
     <div class="trailer">
       <app-youtube-player></app-youtube-player>
     </div>
-    <div class="sse-content" style="margin-left: 11%">
+    <div class="sse-content">
       <app-content-card
         [cardTitle]="'Cart Chaos!'"
         [cardSubtitle]="''"
@@ -26,30 +31,31 @@
         [image]="'assets/gifs/PutInCart.gif'"
       ></app-content-card>
     </div>
+    <div class="sse-content">
+      <app-content-card
+        [cardTitle]="'Shove to Win!'"
+        [cardSubtitle]="''"
+        [cardContent]="goalSSE"
+        [image]="'assets/gifs/RKO.gif'"
+      ></app-content-card>
+    </div>
+    <div class="sse-content">
+      <app-content-card
+        [cardTitle]="'Can I Shop There?'"
+        [cardSubtitle]="''"
+        [cardContent]="levelsSSE"
+        [image]="'assets/gifs/Coop_Weeee.gif'"
+      ></app-content-card>
+    </div>
+    <div class="sse-content">
+      <app-content-card
+        [cardTitle]="'Bring Some friends!'"
+        [cardSubtitle]="''"
+        [cardContent]="multiSSE"
+        [image]="'assets/gifs/PvPFriends.gif'"
+      ></app-content-card>
+    </div>
   </div>
-  <div class="sse-content" style="margin-left: 30%">
-    <app-content-card
-      [cardTitle]="'Shove to Win!'"
-      [cardSubtitle]="''"
-      [cardContent]="goalSSE"
-      [image]="'assets/gifs/RKO.gif'"
-    ></app-content-card>
-  </div>
-  <div class="sse-content" style="margin-left: 11%">
-    <app-content-card
-      [cardTitle]="'Can I Shop There?'"
-      [cardSubtitle]="''"
-      [cardContent]="levelsSSE"
-      [image]="'assets/gifs/Coop_Weeee.gif'"
-    ></app-content-card>
-  </div>
-  <div class="sse-content" style="margin-left: 30%">
-    <app-content-card
-      [cardTitle]="'Bring Some friends!'"
-      [cardSubtitle]="''"
-      [cardContent]="multiSSE"
-      [image]="'assets/gifs/PvPFriends.gif'"
-    ></app-content-card>
-  </div>
+
   <app-image-grid></app-image-grid>
 </div>
