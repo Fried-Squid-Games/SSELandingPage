@@ -1,78 +1,35 @@
-<div class="nav-bar-wrapper">
-  <mat-toolbar style="padding-left: 0% !important" class="nav-bar">
-    <a class="logo-container" routerLink="/">
-      <img src="assets/images/FSGLogoCircle.png" alt="logo" class="FSGlogo" />
-    </a>
-    <div class="button-container">
-      <a
-        mat-button
-        routerLink="/"
-        class="button"
-        style="color: white; font-size: x-large; border-radius: 0"
-        >Home</a
-      >
-    </div>
-    <div class="button-container" [matMenuTriggerFor]="gamesMenu">
-      <button
-        mat-button
-        (click)="rotateDropdownIcon()"
-        style="color: white; font-size: x-large; border-radius: 0"
-      >
-        Games
-      </button>
-      <mat-menu
-        #gamesMenu="matMenu"
-        (closed)="resetDropdownIcon()"
-        class="custom-menu"
-      >
-        <button
-          mat-menu-item
-          [routerLink]="'/games/shopping-spree-extreme'"
-          class="custom-menu-item"
-        >
-          Shopping Spree: Extreme!!!
-        </button>
-        <!-- Add more game links as needed -->
-      </mat-menu>
-    </div>
-    <div class="button-container" [matMenuTriggerFor]="resourcesMenu">
-      <a
-        mat-button
-        class="button"
-        style="color: white; font-size: x-large; border-radius: 0"
-        >Resources</a
-      >
-      <mat-menu
-        #resourcesMenu="matMenu"
-        (closed)="resetDropdownIcon()"
-        class="custom-menu"
-      >
-        <button
-          mat-menu-item
-          class="custom-menu-item"
-          (click)="newTab('https://forms.gle/L49KQtGrfXCFdW5W7')"
-        >
-          Feedback Form
-        </button>
-        <button
-          mat-menu-item
-          class="custom-menu-item"
-          (click)="newTab('https://forms.gle/eHMpAD7gRR3A3zbe9')"
-        >
-          Bug Report
-        </button>
-        <!-- Add more resource links as needed -->
-      </mat-menu>
-    </div>
-    <div class="button-container">
-      <a
-        mat-button
-        routerLink="/news"
-        class="button"
-        style="color: white; font-size: x-large; border-radius: 0"
-        >News</a
-      >
-    </div>
+<nav class="navbar navbar-expand-md navbar-dark">
+  <a class="navbar-brand"  href="#" routerLink="/">
+    <img src="assets/images/FSGLogoCircle.png" alt="logo" class="FSGlogo" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse"  id="navBar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a [routerLink]="'/'" class="nav-link text-white"  href="#">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="gamesDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+        <div class="dropdown-menu" aria-labelledby="gamesDropdownMenuLink">
+          <a class="dropdown-item" href="#" [routerLink]="'/games/shopping-spree-extreme'">Shopping Spree: Extreme!!!</a>
+           <!-- Add more game links as needed -->
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="resourcesDropdownMenuLink" role="button" data-toggle="dropdown">Resources</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#" (click)="newTab('https://forms.gle/L49KQtGrfXCFdW5W7')">Feedback Form</a>
+          <a class="dropdown-item" href="#" (click)="newTab('https://forms.gle/eHMpAD7gRR3A3zbe9')">Bug Report</a>
+           <!-- Add more resource links as needed -->
+        </div>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/news" class="nav-link text-white">News</a>
+      </li>
+    </ul>
+
     <div class="social-wrapper">
       <div class="social-container">
         <a href="https://discord.com/invite/FUDcKR7TdH">
@@ -116,5 +73,5 @@
         </a>
       </div>
     </div>
-  </mat-toolbar>
-</div>
+  </div>
+</nav>
