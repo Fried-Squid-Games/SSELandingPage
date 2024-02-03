@@ -1,37 +1,37 @@
-<nav class="navbar navbar-expand-md navbar-dark">
-  <a class="navbar-brand"  href="#" routerLink="/">
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand"  href="#" routerLink="/" (click)="isNavBarCollapsed=true">
     <img src="assets/images/FSGLogoCircle.png" alt="logo" class="FSGlogo" />
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" (click)="isNavBarCollapsed = !isNavBarCollapsed">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse"  id="navBar">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <div [ngbCollapse]="isNavBarCollapsed" class="collapse navbar-collapse"  id="navBar">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
       <li class="nav-item">
-        <a [routerLink]="'/'" class="nav-link text-white"  href="#">Home</a>
+        <a [routerLink]="'/'" (click)="isNavBarCollapsed=true" class="nav-link text-navbar"  href="#">Home</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" id="gamesDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
-        <div class="dropdown-menu" aria-labelledby="gamesDropdownMenuLink">
-          <a class="dropdown-item" href="#" [routerLink]="'/games/shopping-spree-extreme'">Shopping Spree: Extreme!!!</a>
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle text-navbar" href="#" id="gamesDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>Games</a>
+        <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="gamesDropdownMenuLink">
+          <a class="dropdown-item" ngbDropdownItem href="#" (click)="isNavBarCollapsed=true" [routerLink]="'/games/shopping-spree-extreme'">Shopping Spree: Extreme!!!</a>
            <!-- Add more game links as needed -->
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" id="resourcesDropdownMenuLink" role="button" data-toggle="dropdown">Resources</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#" (click)="newTab('https://forms.gle/L49KQtGrfXCFdW5W7')">Feedback Form</a>
-          <a class="dropdown-item" href="#" (click)="newTab('https://forms.gle/eHMpAD7gRR3A3zbe9')">Bug Report</a>
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle text-navbar" id="resourcesDropdownMenuLink" role="button" data-toggle="dropdown" ngbDropdownToggle>Resources</a>
+        <div class="dropdown-menu" ngbDropdownMenu>
+          <a class="dropdown-item" ngbDropdownItem (click)="newTab('https://forms.gle/L49KQtGrfXCFdW5W7');isNavBarCollapsed=true">Feedback Form</a>
+          <a class="dropdown-item" ngbDropdownItem (click)="newTab('https://forms.gle/eHMpAD7gRR3A3zbe9');isNavBarCollapsed=true">Bug Report</a>
            <!-- Add more resource links as needed -->
         </div>
       </li>
       <li class="nav-item">
-        <a routerLink="/news" class="nav-link text-white">News</a>
+        <a routerLink="/news" (click)="isNavBarCollapsed=true" class="nav-link text-navbar">News</a>
       </li>
     </ul>
 
-    <ul class="navbar-nav social-wrapper">
+    <ul class="social-wrapper mx-auto">
       <li class="nav-item social-container">
         <a href="https://discord.com/invite/FUDcKR7TdH" class="logo-container">
           <img

@@ -58,11 +58,12 @@ button {
 
 .social-wrapper {
   margin-left: auto; /* Push the social icons to the right */
+  margin-top: 45px;
 }
 
 .social-container {
   display: inline-block;
-  width: 50px;
+  width: 45px;
   margin-left: 20px;
   margin-right: 20px;
   transition: transform 0.3s ease;
@@ -86,6 +87,7 @@ button {
   color: #fcb045 !important;
 }
 
-.text-white{
+.text-navbar{
   color: white;
+  font-size: x-large;
 }
