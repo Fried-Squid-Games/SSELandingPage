@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand"  href="#" routerLink="/" (click)="isNavBarCollapsed=true">
+  <a class="navbar-brand" routerLink="/" (click)="isNavBarCollapsed=true">
     <img src="assets/images/FSGLogoCircle.png" alt="logo" class="FSGlogo" />
   </a>
   <button class="navbar-toggler" (click)="isNavBarCollapsed = !isNavBarCollapsed">
@@ -12,9 +12,9 @@
         <a [routerLink]="'/'" (click)="isNavBarCollapsed=true" class="nav-link text-navbar"  href="#">Home</a>
       </li>
       <li class="nav-item dropdown" ngbDropdown>
-        <a class="nav-link dropdown-toggle text-navbar" href="#" id="gamesDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>Games</a>
+        <a class="nav-link dropdown-toggle text-navbar" id="gamesDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>Games</a>
         <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="gamesDropdownMenuLink">
-          <a class="dropdown-item" ngbDropdownItem href="#" (click)="isNavBarCollapsed=true" [routerLink]="'/games/shopping-spree-extreme'">Shopping Spree: Extreme!!!</a>
+          <a class="dropdown-item" ngbDropdownItem (click)="isNavBarCollapsed=true" [routerLink]="'/games/shopping-spree-extreme'">Shopping Spree: Extreme!!!</a>
            <!-- Add more game links as needed -->
         </div>
       </li>
