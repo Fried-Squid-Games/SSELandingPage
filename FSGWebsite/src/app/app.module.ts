@@ -22,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ImageGridComponent } from './image-grid/image-grid.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     MatCardModule,
     MatMenuModule,
     MatIconModule,
+    MatProgressSpinnerModule,
     NgbModule,
     NgbCarouselModule
   ],

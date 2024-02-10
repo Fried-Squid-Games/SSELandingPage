@@ -11,4 +11,6 @@ export class ContentCardComponent {
   @Input() cardContent: string = 'Default Content'; // Input property for card content
   @Input() image: string = 'default img';
   @Input() isRight: boolean = false;
+
+  textCollapsed = true;
 }

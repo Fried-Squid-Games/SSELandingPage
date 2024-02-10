@@ -26,6 +26,10 @@
 }
 .FSGlogo {
   max-width: 150px;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .button-container {
@@ -90,4 +94,12 @@ button {
 .text-navbar{
   color: white;
   font-size: x-large;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.navbar-nav > li {
+  padding: 0 20px;
 }

@@ -1,23 +1,51 @@
-<mat-card [ngClass]="{'card': true, 'float-end': isRight, 'float-start': !isRight}">
+<mat-card [ngClass]="{'card rounded d-md-none': true, 'float-end': isRight, 'float-start': !isRight}">
+  <mat-card-header class="navbar navbar-expand-lg navbar-dark">
+    <mat-card-title
+      style="color: #fcb045; margin-bottom: 20px"
+      ><h3>{{ cardTitle }}</h3></mat-card-title
+    >
+    <mat-card-subtitle style="color: white">{{
+      cardSubtitle
+    }}</mat-card-subtitle>
+    <button class="navbar-toggler" (click)="textCollapsed=!textCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </mat-card-header>
   <div class="card-content-container">
     <div class="text-content">
-      <mat-card-header>
+      <mat-card-content class="lead collapse" [animation]="false" [ngbCollapse]="textCollapsed" [innerHTML]="cardContent"> </mat-card-content>
+      <mat-card-actions>
+        <!-- Your actions or buttons -->
+      </mat-card-actions>
+    </div>
+    <div class="image-container-fluid">
+      <!-- Place your image container or image tag here -->
+      <img [src]="image" alt="Image" class="img-fluid collapse" [animation]="false" [ngbCollapse]="!textCollapsed"/>
+    </div>
+  </div>
+</mat-card>
+
+
+<mat-card [ngClass]="{'card rounded d-none d-md-block': true, 'float-end': isRight, 'float-start': !isRight}">
+  <div class="card-content-container">
+    <div class="text-content">
+      <mat-card-header class="navbar navbar-expand-lg navbar-dark">
         <mat-card-title
-          style="color: #fcb045; font-size: 1.8vw; margin-bottom: 20px"
-          ><b>{{ cardTitle }}</b></mat-card-title
+          style="color: #fcb045; margin-bottom: 20px"
+          ><h3>{{ cardTitle }}</h3></mat-card-title
         >
         <mat-card-subtitle style="color: white">{{
           cardSubtitle
         }}</mat-card-subtitle>
       </mat-card-header>
-      <mat-card-content [innerHTML]="cardContent"> </mat-card-content>
+      <mat-card-content class="lead" [innerHTML]="cardContent"> </mat-card-content>
       <mat-card-actions>
         <!-- Your actions or buttons -->
       </mat-card-actions>
     </div>
     <div class="image-container">
       <!-- Place your image container or image tag here -->
-      <img [src]="image" alt="Image" />
+      <img [src]="image" alt="Image" class="img-fluid"/>
     </div>
   </div>
 </mat-card>

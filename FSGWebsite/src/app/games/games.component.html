@@ -1,6 +1,6 @@
 <div class="games-wrapper">
   <div class="sse-banner">
-    <img src="assets\images\SSELogo.png" />
+    <img class="img-fluid" src="assets\images\SSELogo.png" />
   </div>
   <div class="content-wrapper">
     <div class="steam-link">
@@ -10,7 +10,6 @@
           ><img src="assets/images/SteamWhite.png" height="50px"
         /></a>
       </h2>
-      <h2 id="divider">|</h2>
       <h2>
         <a
           href="assets/files/PressKit.zip"
@@ -20,7 +19,7 @@
         >
       </h2>
     </div>
-    <div class="trailer">
+    <div class="col-lg-8 trailer">
       <app-youtube-player></app-youtube-player>
     </div>
     <div class="sse-content">
@@ -53,7 +52,7 @@
     <div class="sse-content">
       <app-content-card
         [isRight]="true"
-        [cardTitle]="'Bring Some friends!'"
+        [cardTitle]="'Bring Some Friends!'"
         [cardSubtitle]="''"
         [cardContent]="multiSSE"
         [image]="'assets/gifs/PvPFriends.gif'"
@@ -63,11 +62,11 @@
 
   <ngb-carousel
     [animation]="true"
-    [pauseOnHover]="true"
+    [pauseOnHover]="false"
     [interval]="3500"
     [showNavigationArrows]="false"
     [showNavigationIndicators]="false"
-    class="mx-auto"
+    class="mx-auto col-lg-8 col-sm-12 col-xs-12 col-md-10"
   >
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
