@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,8 @@ import { MatMenuModule } from '@angular/material/menu'; // Import MatMenuModule
 import { MatIconModule } from '@angular/material/icon';
 import { ImageGridComponent } from './image-grid/image-grid.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
     MatCardModule,
     MatMenuModule,
     MatIconModule,
+    MatProgressSpinnerModule,
+    NgbModule,
+    NgbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -10,4 +10,7 @@ export class ContentCardComponent {
   @Input() cardSubtitle: string = 'Default Subtitle'; // Input property for card subtitle
   @Input() cardContent: string = 'Default Content'; // Input property for card content
   @Input() image: string = 'default img';
+  @Input() isRight: boolean = false;
+
+  textCollapsed = true;
 }

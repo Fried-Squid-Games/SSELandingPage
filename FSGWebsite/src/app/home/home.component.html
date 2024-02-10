@@ -5,15 +5,16 @@
   <div class="content-card-container">
     <div class="content-card">
       <app-content-card
-        [cardTitle]="'About Fried Squid Games LLC'"
+        [isRight]="false"
+        [cardTitle]="'About Us'"
         [cardSubtitle]="''"
         [cardContent]="aboutUsContent"
         [image]="'assets/images/devs.jpg'"
       ></app-content-card>
     </div>
-    <div class="content-card" style="margin-left: 35%">
+    <div class="content-card">
       <app-content-card
-        class="right-card"
+        [isRight]="true"
         [cardTitle]="'Our Type of Game'"
         [cardSubtitle]="''"
         [cardContent]="ourTypeOfGame"

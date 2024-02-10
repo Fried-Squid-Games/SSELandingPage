@@ -5,7 +5,7 @@ mat-card {
   height: 100%; /* Set height to 100% for responsiveness */
   max-width: 1200px; /* Set maximum width */
   max-height: 800px; /* Set maximum height */
-  margin: 20px;
+  margin: 2%;
   display: flex; /* Ensures card fills the available space */
   flex-direction: column; /* Ensures children stack vertically */
   overflow: hidden; /* Prevents overflow */
@@ -29,7 +29,15 @@ mat-card-actions button.mat-button {
   overflow: auto; /* Enable scrolling if content overflows */
   word-wrap: break-word; /* Allow breaking long words */
   max-height: 100%; /* Limit text content height */
-  font-size: 1.5vw; /* Adjust the font size based on viewport width */
+}
+
+.image-container-fluid {
+  // flex: 1;
+  // display: flex;
+  // justify-content: center; /* Center the content horizontally */
+  // align-items: center;
+  padding: 20px;
+  overflow: hidden; /* Prevents overflow */
 }
 
 .image-container {
@@ -39,10 +47,4 @@ mat-card-actions button.mat-button {
   align-items: center;
   padding: 20px;
   overflow: hidden; /* Prevents overflow */
-}
-
-.image-container img {
-  max-width: 100%; /* Ensures the image fits within the container */
-  max-height: 100%; /* Ensures the image fits within the container */
-  object-fit: contain; /* Fits the entire image within the container */
 }

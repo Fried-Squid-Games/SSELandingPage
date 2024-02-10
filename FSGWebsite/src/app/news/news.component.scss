@@ -1,15 +1,7 @@
-#archiveWrapper{
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  #archive{
-    display:block;
-    width: 40%;
-    height: 80%;
-    margin:auto;
-    border: 0;
-  }
+.loading
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
 }

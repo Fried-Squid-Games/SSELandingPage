@@ -9,6 +9,7 @@ import { MatMenu } from '@angular/material/menu';
 export class NavbarComponent {
   @ViewChild('dropdownIcon') dropdownIcon!: HTMLElement;
   @ViewChild('gamesMenu') gamesMenu!: MatMenu;
+  isNavBarCollapsed = true;
   constructor() {}
 
   rotateDropdownIcon() {
