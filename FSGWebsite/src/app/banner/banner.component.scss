@@ -1,14 +1,15 @@
 /* banner.component.scss */
 
-.banner {
+.custom-banner {
   width: 100%; /* Use viewport width to cover the entire horizontal space */
   height: auto;
   overflow: hidden;
   display: inline-block;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-.banner img {
+.custom-banner img {
   width: 100%;
   height: auto;
   display: block;
@@ -19,6 +20,8 @@
     rgb(255, 255, 255) 100%
   );
   overflow-x: hidden;
-  mask-image: linear-gradient(to top, transparent 0%, rgb(255, 255, 255) 0%);
+  mask-image: linear-gradient(to top, transparent 0%, rgb(255, 255, 255) 50%);
   z-index: 0;
+  padding: 0;
+  margin: 0;
 }

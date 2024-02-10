@@ -25,6 +25,7 @@
     </div>
     <div class="sse-content">
       <app-content-card
+        [isRight]="false"
         [cardTitle]="'Cart Chaos!'"
         [cardSubtitle]="''"
         [cardContent]="aboutSSE"
@@ -33,6 +34,7 @@
     </div>
     <div class="sse-content">
       <app-content-card
+        [isRight]="true"
         [cardTitle]="'Shove to Win!'"
         [cardSubtitle]="''"
         [cardContent]="goalSSE"
@@ -41,6 +43,7 @@
     </div>
     <div class="sse-content">
       <app-content-card
+        [isRight]="false"
         [cardTitle]="'Can I Shop There?'"
         [cardSubtitle]="''"
         [cardContent]="levelsSSE"
@@ -49,6 +52,7 @@
     </div>
     <div class="sse-content">
       <app-content-card
+        [isRight]="true"
         [cardTitle]="'Bring Some friends!'"
         [cardSubtitle]="''"
         [cardContent]="multiSSE"
@@ -57,5 +61,48 @@
     </div>
   </div>
 
-  <app-image-grid></app-image-grid>
+  <ngb-carousel
+    [animation]="true"
+    [pauseOnHover]="true"
+    [interval]="3500"
+    [showNavigationArrows]="false"
+    [showNavigationIndicators]="false"
+    class="mx-auto"
+  >
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level1Cover.PNG'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level2Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level3Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level4Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level5Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level6Cover.png'"/>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="img-fluid" [src]="'assets/images/Level7Cover.png'"/>
+      </div>
+    </ng-template>
+  </ngb-carousel>
 </div>

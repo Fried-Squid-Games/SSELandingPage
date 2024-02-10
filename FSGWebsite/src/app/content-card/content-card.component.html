@@ -1,4 +1,4 @@
-<mat-card class="card">
+<mat-card [ngClass]="{'card': true, 'float-end': isRight, 'float-start': !isRight}">
   <div class="card-content-container">
     <div class="text-content">
       <mat-card-header>

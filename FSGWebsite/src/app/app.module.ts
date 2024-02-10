@@ -21,6 +21,7 @@ import { MatMenuModule } from '@angular/material/menu'; // Import MatMenuModule
 import { MatIconModule } from '@angular/material/icon';
 import { ImageGridComponent } from './image-grid/image-grid.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
     MatCardModule,
     MatMenuModule,
     MatIconModule,
-    NgbModule
+    NgbModule,
+    NgbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],
